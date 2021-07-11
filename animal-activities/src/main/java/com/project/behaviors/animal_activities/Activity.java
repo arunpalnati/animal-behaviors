@@ -18,4 +18,13 @@ public class Activity {
 		System.out.println("I am swimming");
 	}
 
+	public void joke() {
+		System.out.println("I am Joking");
+	}
+
+	public void eat(String food) {
+		System.out.println("Eating "+ food);
+		
+	}
+
 }

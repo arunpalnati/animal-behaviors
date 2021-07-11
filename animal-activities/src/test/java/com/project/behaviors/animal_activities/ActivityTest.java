@@ -35,6 +35,18 @@ public class ActivityTest {
 		activity.swim();
 		Mockito.verify(activity, Mockito.times(1)).swim();
 	}
+	
+	@Test
+	public void testJoke() {
+		activity.joke();
+		Mockito.verify(activity, Mockito.times(1)).walk();
+	}
+	
+	@Test
+	public void testEat() {
+		activity.eat("Test Eat");
+		Mockito.verify(activity, Mockito.times(1)).sing(Mockito.anyString());
+	}
 
 
 }
