@@ -4,7 +4,7 @@ import com.project.behaviors.animal_activities.Activity;
 
 public class Caterpillar extends Insect {
 
-	protected Caterpillar(Activity activity) {
+	public Caterpillar(Activity activity) {
 		super(activity);
 	}
 	

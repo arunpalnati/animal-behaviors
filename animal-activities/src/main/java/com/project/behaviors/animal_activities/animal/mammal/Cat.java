@@ -4,12 +4,12 @@ import com.project.behaviors.animal_activities.Activity;
 
 public class Cat extends Mammal {
 
-	protected Cat(Activity activity) {
+	public Cat(Activity activity) {
 		super(activity);
 	}
 
 	@Override
-	protected void sing() {
+	public void sing() {
 		activity.sing("Meow Meow");	
 	}
 	

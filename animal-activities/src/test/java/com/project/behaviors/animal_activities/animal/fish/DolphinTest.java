@@ -14,9 +14,8 @@ public class DolphinTest {
 	
 	@Test
 	public void testSwim() {
-		Fish fish = Mockito.mock(Fish.class);
-		dolphin.swim(fish);
-		Mockito.verify(dolphin, Mockito.times(1)).swim(Mockito.any());
+		dolphin.swim();
+		Mockito.verify(dolphin, Mockito.times(1)).swim();
 	}
 
 }

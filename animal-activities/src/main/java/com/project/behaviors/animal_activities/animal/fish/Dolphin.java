@@ -2,7 +2,13 @@ package com.project.behaviors.animal_activities.animal.fish;
 
 public class Dolphin {
 	
-	public void swim(Fish fish) {
+	private Fish fish;
+	
+	public Dolphin(Fish fish) {
+		this.fish = fish;
+	}
+	
+	public void swim() {
 		fish.swim();
 	}
 
