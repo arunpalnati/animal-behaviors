@@ -7,25 +7,27 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-public class ChickenTest {
-
+public class RoosterTest {
+	
 	@Mock
-	private Chicken chicken;
+	private Rooster rooster;
 	
 	@Test
 	public void testSing() {
-		chicken.sing();
-		Mockito.verify(chicken, Mockito.times(1)).sing();
+		rooster.sing();
+		Mockito.verify(rooster, Mockito.times(1)).sing();
 	}
 	
 	@Test
-	public void testSuperClassMethods() {
-		chicken.fly();	
-		 
-	    Mockito.verify(chicken, Mockito.times(1)).fly();
-	    
-	    chicken.walk();
-	    
-	    Mockito.verify(chicken, Mockito.times(1)).walk();
+	public void testFly() {
+		rooster.fly();	
+	    Mockito.verify(rooster, Mockito.times(1)).fly();
 	}
+	
+	@Test
+	public void testWalk() { 
+		rooster.walk();
+	    Mockito.verify(rooster, Mockito.times(1)).walk();
+	}
+
 }

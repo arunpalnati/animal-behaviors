@@ -1,22 +1,17 @@
 package com.project.behaviors.animal_activities.animal.bird;
 
 import com.project.behaviors.animal_activities.Activity;
-import com.project.behaviors.animal_activities.animal.Animal;
 
-public class Chicken implements Animal {
+public class Chicken extends Bird {
 
-	Activity activity;
-	
 	public Chicken(Activity activity) {
-		this.activity = activity;
+		super(activity);
 	}
 
+	@Override
 	public void sing() {
 		activity.sing("Cluck Cluck");
 	}
 	
-	public void walk() {
-		activity.walk();
-	}
 
 }
