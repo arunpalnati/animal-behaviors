@@ -13,12 +13,17 @@ Creating Animal is an interface without any methods
   
 Created Bird as abstract calss
   -> Bird is also an abstract, there is no real existence
-  
+ 
+Created Activity class to perform all the activities such as fly, walk, swim, etc..
+ -> This class is created to make the reusability of code, and create without duplicate code
+
 Created Chicken, Duck as Bird family of animals and extended with Bird abstract clss to inherit common behaviors
+
+Rooster implemented with has a relationship using Activity class (Avoided inheritance as per the given requirement)
 
 Implemented test cases for abstract class Bird also, using mockito
 
-Fish Family animals implemented 
+Fish Family animals implemented and Dolphin implemented without inheritance 
 
 Mammals added for Parrot testing
 
