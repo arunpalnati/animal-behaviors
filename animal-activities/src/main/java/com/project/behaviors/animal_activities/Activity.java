@@ -10,4 +10,12 @@ public class Activity {
 		System.out.println("I am flying");
 	}
 
+	public void sing(String sound) {
+		System.out.println(sound);
+	}
+
+	public void swim() {
+		System.out.println("I am swimming");
+	}
+
 }

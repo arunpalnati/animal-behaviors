@@ -23,6 +23,18 @@ public class ActivityTest {
 		activity.walk();
 		Mockito.verify(activity, Mockito.times(1)).walk();
 	}
+	
+	@Test
+	public void testSing() {
+		activity.sing("Test case");
+		Mockito.verify(activity, Mockito.times(1)).sing(Mockito.anyString());
+	}
+	
+	@Test
+	public void testSwim() {
+		activity.swim();
+		Mockito.verify(activity, Mockito.times(1)).swim();
+	}
 
 
 }
