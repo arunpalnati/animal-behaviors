@@ -19,10 +19,7 @@ public class ChickenTest {
 	}
 	
 	@Test
-	public void testSuperClassMethods() {
-		chicken.fly();	
-		 
-	    Mockito.verify(chicken, Mockito.times(1)).fly();
+	public void testWalk() {
 	    
 	    chicken.walk();
 	    
